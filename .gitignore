@@ -1,0 +1,18 @@
+# data (regenerate with src/make_synthetic_data.py, or download from Kaggle)
+data/raw/*.csv
+data/processed/*.csv
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# os / editor
+.DS_Store
+.vscode/
+.idea/

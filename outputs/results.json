@@ -1,0 +1,81 @@
+{
+  "data_source": "synthetic",
+  "data_audit": {
+    "rows_in": 237436,
+    "dropped_bad_date": 0,
+    "dropped_duplicate_lines": 0,
+    "dropped_non_numeric": 0,
+    "dropped_invalid_qty_or_sales": 0,
+    "rows_out": 237436
+  },
+  "otif": {
+    "order_lines_total": 237436,
+    "order_lines_fulfilled": 231836,
+    "cancelled_or_fraud": 5600,
+    "on_time_rate": 0.4218585551855622,
+    "late_rate": 0.5781414448144377,
+    "avg_slip_days_when_late": 1.7902099467299342,
+    "avg_transit_days": 3.777566900740178,
+    "total_revenue": 5113896.619999999,
+    "total_profit": 971275.97,
+    "revenue_on_late_orders": 2958185.07,
+    "worst_mode": "Standard Class",
+    "worst_mode_late_share": 0.6653311846247967,
+    "worst_mode_late_rate": 0.640938656700327,
+    "top2_region_late_share": 0.3946535953564021
+  },
+  "otif_tests": [
+    {
+      "dimension": "shipping_mode",
+      "chi2": 14008.808139536497,
+      "p_value": 0.0,
+      "dof": 3,
+      "cramers_v": 0.24581600494748893
+    },
+    {
+      "dimension": "order_region",
+      "chi2": 8022.9160277566125,
+      "p_value": 0.0,
+      "dof": 7,
+      "cramers_v": 0.18602687295838344
+    },
+    {
+      "dimension": "category_name",
+      "chi2": 5.8609622794505585,
+      "p_value": 0.31998388491913166,
+      "dof": 5,
+      "cramers_v": 0.005027985604853455
+    }
+  ],
+  "segmentation": {
+    "n_skus": 120,
+    "n_A": 25,
+    "A_sku_share": 0.20833333333333334,
+    "A_revenue_share": 0.792112000105313,
+    "n_Z": 39,
+    "n_AX": 16,
+    "n_AZ": 1,
+    "AZ_revenue_share": 0.008595122910404082
+  },
+  "forecasting": {
+    "best_model": "HoltWinters",
+    "best_wmape": 0.7026679216980939,
+    "seasonal_naive_wmape": 0.9320886019752431,
+    "improvement_pct": 24.613612889479665,
+    "n_skus": 59,
+    "n_folds": 3
+  },
+  "inventory": {
+    "flat_fill_rate": 0.9992251911358333,
+    "opt_fill_rate": 0.9917422028058775,
+    "fill_rate_delta_pp": -0.7482988329955753,
+    "flat_inventory_value": 137564.73875673432,
+    "opt_inventory_value": 89916.8083912496,
+    "inventory_reduction_pct": 34.63673234588408,
+    "total_cost_reduction_pct": 24.353145123523497,
+    "shortfall_reduction_pct": -965.785069844714,
+    "uniform_fill_rate": 0.9970043449734367,
+    "uniform_inventory_value": 96888.0819948429,
+    "vs_uniform_inventory_pct": 7.195181760295727
+  }
+}
